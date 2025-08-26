@@ -1,0 +1,55 @@
+---
+title: "Exercise Quality Prediction"
+author: "SOMAPURAM UDAY(Student)"
+date: "2025-08-26"
+output: html_document
+---
+
+undefined
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+
+## Executive Summary
+
+This analysis predicts exercise quality using Random Forest on accelerometer data from 6 participants performing barbell lifts in 5 different ways.
+
+## Data Processing
+
+- **Training data**: 19,622 observations with 160 variables
+- **Test data**: 20 test cases  
+- **After cleaning**: 52 predictor features
+- **Classes**: A, B, C, D, E (representing different exercise forms)
+
+## Model Building
+
+- **Algorithm**: Random Forest with 50 trees (optimized for speed)
+- **Cross-validation**: 70/30 train/validation split
+- **Training size**: 13,737 observations
+- **Validation size**: 5,885 observations
+
+## Model Performance
+
+- **Validation Accuracy**: 99.37%
+- **Out-of-sample Error**: 0.63%
+
+This represents excellent classification performance with very low error rate.
+
+## Final Predictions
+
+Predictions for the 20 test cases: B, A, B, A, A, E, D, B, A, A, B, C, B, A, E, E, A, B, B, B
+
+## Model Justification
+
+Random Forest was chosen for its:
+    
+    - Excellent performance on classification tasks
+- Handles mixed data types well  
+- Built-in cross-validation (OOB error)
+- Robust to overfitting
+- No need for extensive preprocessing
+
+The model successfully distinguishes between correct and incorrect exercise forms using accelerometer data from multiple body locations.
+
+## Conclusion
+
+The Random Forest model achieved 99.37% accuracy on the validation set, demonstrating strong predictive performance for exercise quality classification.
+
