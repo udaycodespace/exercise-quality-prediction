@@ -18,4 +18,5 @@ Machine learning project predicting barbell exercise quality using Random Forest
 - Features: Accelerometer data from belt, forearm, arm, dumbbell
 - Classes: A (correct), B-E (common mistakes)
 
-View the HTML file for complete analysis and results.
+**View the complete analysis and results [here](https://udaycodespace.github.io/exercise-quality-prediction/).**
+
